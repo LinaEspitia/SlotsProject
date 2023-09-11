@@ -214,10 +214,6 @@ public class MainWindow extends JFrame {
                 String descriptionTwo = (imageTwo != null) ? imageTwo.getDescription() : null;
                 String descriptionThree = (imageThree != null) ? imageThree.getDescription() : null;
 
-                System.out.println("Description One: " + descriptionOne);
-                System.out.println("Description Two: " + descriptionTwo);
-                System.out.println("Description Three: " + descriptionThree);
-
                 if (descriptionOne != null && descriptionTwo != null && descriptionThree != null &&
                         descriptionOne.equals(combination.getImageDescription()) &&
                         descriptionTwo.equals(combination.getImageDescription()) &&
@@ -241,7 +237,7 @@ public class MainWindow extends JFrame {
             }
 
             jTextField.setText(String.format("%.2f", betAmount));
-            jLabel.setText("Win x" + matchingImages);
+            jLabel.setText("Win" + matchingImages);
         });
 
         btnExit.addActionListener((e) -> {
